@@ -1,0 +1,134 @@
+/**********************************************
+  Black, Teal Color Scheme - Adjusted
+**********************************************/
+
+/* Google Font Import (Optional) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Color Variables */
+:root {
+  --color-black: #000000;
+  --color-teal: #19f3e2; /* Light bluish-greenish */
+}
+
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-black);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+
+.text-teal {
+  color: var(--color-teal) !important;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: var(--color-black);
+  font-size: 0.95rem;
+  height: 48px;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: var(--color-teal) !important;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-teal) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  /* Solid teal background */
+  background-color: var(--color-teal);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 2;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-content h1 span {
+  color: #000; /* Contrasts with teal background */
+  background-color: #fff;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Wave Divider */
+.custom-shape-divider-bottom-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-hero svg {
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 100px;
+}
+
+/* Teal Text Button in Hero */
+.btn-teal {
+  background-color: var(--color-teal);
+  color: #000;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-teal:hover {
+  background-color: #13cabf; /* Slightly darker teal on hover */
+}
+
+/* Project Cards - Make Title and Text White */
+.project-card .card-title,
+.project-card .card-text {
+  color: #fff;
+}
+
+/* Footer */
+.footer-section {
+  background-color: var(--color-black);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
